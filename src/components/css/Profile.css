@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9; /* Match the theme background */
+  color: #333;
+}
+
+.container {
+  max-width: 480px;
+  margin: auto;
+  padding: 15px;
+}
+
+/* Profile Header */
+.profile-header {
+  text-align: center;
+  background-color: #333; /* Dark background for consistency */
+  color: white;
+  padding: 20px 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-header h1 {
+  margin: 10px 0 5px;
+  font-size: 22px;
+}
+
+.profile-header p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Edit Profile Button */
+.edit-profile-btn {
+  display: inline-block;
+  margin: 15px auto;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #333; /* Light text on button */
+  border: 2px solid #333; /* Match border with header */
+  border-radius: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.edit-profile-btn:hover {
+  background-color: #333;
+  color: #ffffff;
+}
+
+/* About Section */
+.about {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Loading Spinner */
+.loading {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+}

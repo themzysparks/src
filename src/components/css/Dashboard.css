@@ -1,0 +1,127 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Fixed Header Styles */
+.MuiAppBar-root {
+  background-color: #0077ff;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1201; /* Ensure it appears above other elements */
+}
+
+/* Dashboard Main Content */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  background-color: #f4f4f9;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 64px; /* Offset for the fixed header */
+  margin-bottom: 56px; /* Offset for the fixed bottom nav */
+}
+
+.dashboard-header {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.dashboard-body {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.dashboard-body button {
+  width: 200px;
+  margin: 20px auto;
+}
+
+/* Loading Spinner */
+.MuiCircularProgress-root {
+  color: #fff;
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav-bar {
+  background-color: #ffffff;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MuiBottomNavigationAction-root {
+  font-size: 12px;
+  color: #555;
+}
+
+.MuiBottomNavigationAction-root.Mui-selected {
+  color: #0077ff;
+}
+
+.MuiBottomNavigation-root {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.MuiBottomNavigation-root .MuiBottomNavigationAction-root {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.MuiBottomNavigationAction-label {
+  font-size: 12px;
+}
+
+/* Adjustments for Smaller Screens */
+@media (max-width: 600px) {
+  .dashboard-header h4 {
+    font-size: 1.5rem;
+  }
+
+  .dashboard-body {
+    padding: 15px;
+  }
+
+  .bottom-nav-bar {
+    padding: 10px;
+  }
+}
